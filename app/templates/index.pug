@@ -1,0 +1,32 @@
+extends layouts/default
+block title
+    title EXTREME BASE
+block link
+    link(rel="stylesheet" href="assets/styles/libs/slicknav.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/jquery.bxslider.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/jquery.fancybox.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/flipclock.min.css")
+    link(rel="stylesheet" href="assets/styles/index.css")
+block body
+    .container
+        +header()
+        +about()
+        +workflow()
+        +tariff()
+        +capture()
+        +field()
+        +review()
+        +gallery()
+        +event()
+        +footer()
+        +popup-form()
+        +popup-success()
+        +page-up()
+block script
+    script(src="assets/scripts/libs/jquery-3.5.1.min.js")
+    script(src="assets/scripts/libs/jquery.slicknav.min.js")
+    script(src="assets/scripts/libs/jquery.bxslider.min.js")
+    script(src="assets/scripts/libs/jquery.fancybox.min.js")
+    script(src="assets/scripts/libs/jquery.maskedinput.min.js")
+    script(src="assets/scripts/libs/flipclock.min.js")
+    script(src="assets/scripts/index.js")

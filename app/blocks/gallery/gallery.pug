@@ -1,0 +1,21 @@
+mixin gallery()
+	section.gallery#gallery&attributes(attributes)
+		h2._title галерея
+		._slider
+			._item
+				img._img(src="assets/images/gallery/big/1.jpg" alt="")
+			._item
+				img._img(src="assets/images/gallery/big/2.jpg" alt="")
+			._item
+				img._img(src="assets/images/gallery/big/3.jpg" alt="")
+			._item
+				img._img(src="assets/images/gallery/big/4.jpg" alt="")
+		._pager
+			a._link(data-slide-index="0")
+				img._thumb(src="assets/images/gallery/small/1.jpg" alt="")
+			a._link(data-slide-index="1")
+				img._thumb(src="assets/images/gallery/small/2.jpg" alt="")
+			a._link(data-slide-index="2")
+				img._thumb(src="assets/images/gallery/small/3.jpg" alt="")
+			a._link(data-slide-index="3")
+				img._thumb(src="assets/images/gallery/small/4.jpg" alt="")

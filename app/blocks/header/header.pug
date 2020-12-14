@@ -1,0 +1,8 @@
+mixin header()
+	header.header#header&attributes(attributes)
+		+navbar()
+		+slogan()
+		._row
+			+action()(class="header__action")
+			+form()
+		+features()

@@ -1,0 +1,58 @@
+.nav
+	display: flex
+	margin: 0 10px 0 -50px
+	@media (max-width: 1279px)
+		position: absolute
+		bottom: 0
+		margin: 0 10px
+	@media (max-width: 767px)
+		display: none
+	
+	&__link
+		width: 120px
+		height: 38px
+		background-image: url('../images/sprite.png')
+		background-position: -104px -491px
+		color: #fff
+		font-family: $rb
+		font-size: 14px
+		text-transform: uppercase
+		text-decoration: none
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-left: -13px
+		@media (max-width: 767px)
+			width: 100%
+			height: auto
+			box-sizing: border-box
+			margin: 0 0 10px 0!important
+			background-image: none
+			border-radius: 3px!important
+			text-align: center
+
+		&:hover
+			background: $orange
+			clip-path: polygon(17% 0%, 100% 0%, 83% 100%, 0% 100%)
+			@media (max-width: 767px)
+				clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+				background-color: #fff!important
+
+.slicknav_menu
+	display: none
+	background-color: $red
+	position: relative
+	z-index: 5
+	@media (max-width: 767px)
+		display: block
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.nav
+		@media (max-width: 1279px)
+			width: 645px
+			right: 0px
+			left: 0px
+			margin: auto
+	.nav__link:hover
+		background-image: url('../images/sprite.png')
+		background-position: -104px -491px

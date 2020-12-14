@@ -1,0 +1,31 @@
+mixin tariff()
+	section.tariff#tariff&attributes(attributes)
+		h2._title выберите тариф, который подходит именно вам
+		._slider
+			._item
+				img._img(src="assets/images/tariff/1.jpg" alt="")
+				._col
+					._name тариф "стандарт"
+					._price.-skew
+						|600
+						span._currency руб
+					._desc.-large все необходимое оборудование (термальная маска, костюм, маркер, работа опытного инструктора, а также 200 шаров), дополнительные шары по 2 руб, либо коробка (200 шаров) - 3500 рублей
+					button._button(type="button") заказать
+			._item
+				img._img(src="assets/images/tariff/2.jpg" alt="")
+				._col
+					._name тариф "999"
+					._price.-skew
+						|999
+						span._currency руб
+					._desc.-middle все необходимое оборудование, 500 шаров, дополнительные шары - от 1500 руб за коробку (2000 шаров)
+					button._button(type="button") заказать
+			._item
+				img._img(src="assets/images/tariff/3.jpg" alt="")
+				._col
+					._name тариф "можно со своим"
+					._price.-skew
+						|400
+						span._currency руб
+					._desc.-small коробка шаров - от 1500 руб, со своими шарами - 700 руб
+					button._button(type="button") заказать

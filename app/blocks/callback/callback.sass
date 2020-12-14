@@ -1,0 +1,43 @@
+.callback
+	display: flex
+	align-items: center
+	
+	&__icon
+		width: 58px
+		height: 58px
+		background-image: url(../images/sprite.png)
+		background-position: -615px -295px
+
+	&__col
+		display: flex
+		flex-direction: column
+
+	&__phone
+		color: #fff
+		font-family: $rb
+		font-size: 32px
+		text-align: right
+
+	&__button
+		width: 164px
+		height: 31px
+		background-color: transparent
+		background-image: url(../images/sprite.png)
+		background-position: -341px -426px
+		color: #fff
+		font-family: $rb
+		font-size: 15px
+		text-transform: uppercase
+		border: none
+		outline: none
+		cursor: pointer
+		margin-top: 3px
+
+		&:hover
+			background: $orange
+			clip-path: polygon(10% 0%,100% 0%,90% 100%,0% 100%)
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.callback__button:hover
+		background-image: url(../images/sprite.png)
+		background-position: -341px -426px

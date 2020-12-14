@@ -1,0 +1,146 @@
+.action
+	position: relative
+	min-height: 195px
+	@media (max-width: 520px)
+		width: 90%
+		max-width: 400px
+		background-color: rgba(255,255,255,.5)
+
+	&__bg
+		position: absolute
+		top: 0
+		left: 45px
+		z-index: 2
+		width: 430px
+		height: 195px
+		transform: skew(-25deg)
+		background-color: rgba(255,255,255,.5)
+		@media (max-width: 520px)
+			display: none
+	
+	&__container
+		width: 520px
+		min-height: 195px
+		position: relative
+		z-index: 3
+		@media (max-width: 520px)
+			width: 100%
+
+	&__row
+		display: flex
+		margin-left: 45px
+		@media (max-width: 520px)
+			margin-left: 0
+		@media (max-width: 450px)
+			flex-direction: column
+
+	&__nameplate
+		width: 193px
+		height: 65px
+		background-image: url(../images/sprite.png)
+		background-position: 0 -426px
+		font-family: $rb
+		font-size: 31px
+		color: #fff
+		text-transform: uppercase
+		text-shadow: 2px 2px 2px #670c0c
+		margin: -10px 0 0 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		@media (max-width: 520px)
+			margin-left: -20px
+
+	&__col
+		display: flex
+		flex-direction: column
+		font-family: $rb
+		color: $red
+		text-transform: uppercase
+		margin: 10px 0 0 10px
+		@media (max-width: 767px)
+			margin: 5px
+		@media (max-width: 450px)
+			text-align: center
+			margin: 10px
+
+	&__text-1
+		font-size: 38px
+		line-height: 30px
+		
+
+	&__text-2
+		font-size: 16px
+		line-height: 15px
+
+	&__timer
+		width: auto
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		margin: 35px 0 20px 45px
+		@media (max-width: 520px)
+			margin-left: -20px
+			justify-content: center
+		@media (max-width: 450px)
+			margin-top: 20px
+			margin-left: -10px
+	
+	.flip-clock-divider
+		width: 20px
+		height: 45px
+		@media (max-width: 450px)
+			width: 10px
+			height: 35px
+	.flip-clock-wrapper ul
+		width: 30px
+		height: 45px
+		margin: 3px
+		@media (max-width: 450px)
+			width: 25px
+			height: 35px
+			margin: 2px
+	.flip-clock-wrapper ul li
+		line-height: 47px
+		@media (max-width: 450px)
+			line-height: 36px
+	.flip-clock-wrapper ul li a div div.inn
+		font-size: 38px
+		@media (max-width: 450px)
+			font-size: 28px
+	.flip-clock-dot
+		width: 6px
+		height: 6px
+		left: 7px
+		@media (max-width: 450px)
+			width: 5px
+			height: 5px
+			left: 3px
+	.flip-clock-dot.top
+		top: 10px
+		@media (max-width: 450px)
+			top: 7px
+	.flip-clock-dot.bottom
+		bottom: 10px
+		@media (max-width: 450px)
+			bottom: 7px
+	.flip-clock-divider .flip-clock-label
+		font-size: 14px
+		@media (max-width: 450px)
+			font-size: 12px
+	.flip-clock-divider.days .flip-clock-label
+		right: -55px
+		@media (max-width: 450px)
+			right: -44px
+	.flip-clock-divider.hours .flip-clock-label
+		right: -55px
+		@media (max-width: 450px)
+			right: -44px
+	.flip-clock-divider.minutes .flip-clock-label
+		right: -55px
+		@media (max-width: 450px)
+			right: -44px
+	.flip-clock-divider.seconds .flip-clock-label
+		right: -60px
+		@media (max-width: 450px)
+			right: -48px

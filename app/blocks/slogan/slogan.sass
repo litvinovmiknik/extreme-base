@@ -1,0 +1,68 @@
+.slogan
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	font-family: $rb
+	text-transform: uppercase
+	text-shadow: 2px 2px 2px #670c0c
+	margin-top: 10px
+	@media (max-width: 1279px)
+		position: relative
+		padding: 50px 0 60px
+	@media (max-width: 767px)
+		padding: 0
+		flex-direction: column
+		margin-top: 0
+	
+	&__text-1
+		font-size: 31px
+		@media (max-width: 1279px)
+			position: absolute
+			top: 0
+		@media (max-width: 767px)
+			position: relative
+			top: auto
+			margin-bottom: 10px
+
+	&__text-2
+		font-size: 33px
+		width: 311px
+		height: 62px
+		background-image: url('../images/sprite.png')
+		background-position: 0 -295px
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__text-3
+		font-size: 36px
+
+	&__text-4
+		font-size: 31px
+		width: 304px
+		height: 62px
+		background-image: url('../images/sprite.png')
+		background-position: -311px -295px
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__text-5
+		font-size: 23px
+		@media (max-width: 1279px)
+			position: absolute
+			bottom: 0
+			text-align: center
+		@media (max-width: 767px)
+			position: relative
+			bottom: auto
+			margin-top: 10px
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.slogan
+		@media (max-width: 1279px)
+			max-width: 645px
+			margin: 0 auto
+	.slogan__text-5
+		right: 0

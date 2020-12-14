@@ -1,0 +1,11 @@
+mixin form()
+	form.form(action="#" method="post")&attributes(attributes)
+		._title закажите <br>игру прямо сейчас
+		._field
+			i._name-icon
+			input._input(type="text" placeholder="имя" name="name" id="name" required)
+		._field
+			i._phone-icon
+			input._input(type="text" placeholder="телефон" name="phone" id="phone" required)
+		button._button(type="submit") заказать
+		._text c Вами свяжутся <br>в течении 15 минут

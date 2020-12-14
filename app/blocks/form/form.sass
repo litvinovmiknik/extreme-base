@@ -1,0 +1,101 @@
+.form
+	width: 323px
+	height: 314px
+	background-color: rgba(255,255,255,.5)
+	border-radius: 5px
+	display: flex
+	flex-direction: column
+	align-items: center
+	@media (max-width: 450px)
+		width: 90%
+		max-width: 323px
+	
+	&__title
+		width: 353px
+		height: 85px
+		background-image: url(../images/sprite.png)
+		background-position: -249px -133px
+		font-family: $rb
+		font-size: 19px
+		color: #fff
+		text-align: center
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: -5px 0 20px 0
+		@media (max-width: 450px)
+			width: 100%
+			max-width: 353px
+			background-image: none
+			background-color: $red
+
+	&__field
+		width: 225px
+		height: 40px
+		margin-bottom: 10px
+		position: relative
+		display: flex
+		align-items: center
+
+	&__name-icon
+		width: 19px
+		height: 20px
+		background-image: url(../images/sprite.png)
+		background-position: -249px -218px
+		position: absolute
+		left: 10px
+		transform: scale(.8)
+
+	&__phone-icon
+		width: 13px
+		height: 23px
+		background-image: url(../images/sprite.png)
+		background-position: -505px -426px
+		position: absolute
+		left: 14px
+		transform: scale(.8)
+
+	&__input
+		width: 100%
+		height: 100%
+		padding-left: 40px
+		box-sizing: border-box
+		outline: none
+		border: none
+		border-radius: 5px
+		font-family: $tcl
+		font-size: 12px
+		color: #000
+		text-transform: uppercase
+
+	&__button
+		width: 174px
+		height: 51px
+		margin-top: 10px
+		background-image: url(../images/sprite.png)
+		background-position: -430px -239px
+		font-family: $rb
+		font-size: 20px
+		color: #fff
+		text-transform: uppercase
+		border: none
+		border-radius: 5px
+		outline: none
+		cursor: pointer
+
+		&:hover
+			background: $orange
+
+	&__text
+		font-family: $tcl
+		font-size: 13px
+		color: #000
+		line-height: 15px
+		text-align: center
+		margin-top: 10px
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.form__name-icon, .form__phone-icon
+		top: 10px
+		
