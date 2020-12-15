@@ -50,17 +50,23 @@
 			margin-bottom: 30px
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
-	.footer__note
-		width: 100%
-	.footer__row
-		@media (max-width: 1279px)
-			display: block
+	.footer
+		
+		&__note
 			width: 100%
-	.footer__map
-		@media (max-width: 1279px)
-			margin-left: auto
-			margin-right: auto
-	.footer__col
-		@media (max-width: 1279px)
-			max-width: 700px
-			margin: 0 auto
+			max-width: 940px
+
+		&__row
+			@media (max-width: 1279px)
+				display: block
+				width: 100%
+
+		&__map
+			@media (max-width: 1279px)
+				margin-left: auto
+				margin-right: auto
+
+		&__col
+			@media (max-width: 1279px)
+				max-width: 700px
+				margin: 0 auto

@@ -34,6 +34,7 @@
 		margin: 0 8px 20px
 
 	&__link
+		display: block
 		position: relative
 
 		&:after
@@ -59,9 +60,9 @@
 			opacity: 0
 			z-index: 2
 
-	&__link:hover
-		&:before, &:after
-			opacity: 1
+		&:hover
+			&:before, &:after
+				opacity: 1
 
 	&__nameplate
 		width: 104px
@@ -97,3 +98,9 @@
 		justify-content: center
 		position: relative
 		z-index: 2
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+	.field
+
+		&__name
+			display: block
