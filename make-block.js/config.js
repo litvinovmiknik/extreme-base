@@ -7,7 +7,7 @@ const fileSources = {
 };
 const appendToFileSources = {
     pug: `${newLineChar}include ../../${blocksDir}/{blockName}/{blockName}`, // Include pug block file in blocks.pug when creating pug block file
-    sass: `${newLineChar}@import '../${blocksDir}/{blockName}/{blockName}.sass'` // Import sass block file in index.sass when creating sass block file
+    sass: `${newLineChar}@import '../${blocksDir}/{blockName}/{blockName}'` // Import sass block file in index.sass when creating sass block file
 };
 
 export default {
