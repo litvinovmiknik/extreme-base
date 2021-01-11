@@ -13,4 +13,10 @@ $(function() {
     });
 
     $('input[name="phone"]').mask("+7 (999) 999-9999");
+
+    let hash = $(location).attr('hash');
+    if (hash.indexOf('popup') === 1) {
+        const popupClassName = hash.replace(/^#/, '.');
+        $(popupClassName).css('display', 'flex');
+    }
 });
