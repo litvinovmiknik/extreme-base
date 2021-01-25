@@ -1,7 +1,7 @@
 {
-    "name": "mpa-template",
+    "name": "extreme-base",
     "version": "1.0.0",
-    "description": "Multi-page application template",
+    "description": "Extreme base - paintball club",
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.8.4",
